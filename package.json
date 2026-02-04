@@ -1,0 +1,46 @@
+{
+  "name": "openclaw-langcache",
+  "version": "1.0.2",
+  "description": "Semantic caching skill for OpenClaw using Redis LangCache",
+  "keywords": [
+    "openclaw",
+    "skill",
+    "langcache",
+    "redis",
+    "semantic-caching",
+    "llm",
+    "ai",
+    "cache"
+  ],
+  "homepage": "https://github.com/openclaw/langcache#readme",
+  "bugs": {
+    "url": "https://github.com/openclaw/langcache/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openclaw/langcache.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "OpenClaw Contributors"
+  },
+  "files": [
+    "skills/",
+    "scripts/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "openclaw": {
+    "type": "skill",
+    "skills": [
+      "langcache"
+    ],
+    "installPath": "skills/"
+  }
+}
